@@ -6,8 +6,7 @@ class RoomScraper
 		
 	def call
 		rows.each do |row_doc|
-			data = scrape_row(row_doc)
-			binding.pry
+			Room.create_from_hash(scrape_row(row_doc)) #=>should put room in database
 		end	
 	end
 	
