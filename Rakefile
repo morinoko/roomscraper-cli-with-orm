@@ -16,6 +16,5 @@ task :scrape_rooms do
 # 	chillicothe_scraper = RoomScraper.new('https://chillicothe.craigslist.org/search/roo')
 # 	chillicothe_scraper.call
 	
-	
 	# After this method call, I should be able to say Room.all and have rooms there.
 end

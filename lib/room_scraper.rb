@@ -21,12 +21,11 @@ class RoomScraper
 		def scrape_row(row)
 			# scrape an individual row. return hash of attributes
 			{
-				date_created: row.search("time").attribute("datetime").text,
 				title: row.search("a.result-title").text,
-				url: row.search("a.result-title").attribute("href").value,
-				price: row.search("span.result-meta span.result-price").text
+				date_created: row.search("time").attribute("datetime").text,
+				price: row.search("span.result-meta span.result-price").text,
+				url: row.search("a.result-title").attribute("href").value
 			}
 		end
-	
 		
 end
